@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <form class="create-form" action="127.0.0.1/wiki/{{title}}/edit" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="Submit" name="Edit" value="Edit">
+      </form>
+    </div>
+  </body>
+</html>

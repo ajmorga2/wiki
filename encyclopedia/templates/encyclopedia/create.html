@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create  Encyclopedia Page
+{% endblock %}
+
+{% block body %}
+    <form class="create-form" action="http://127.0.0.1:8000/create" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <div class="">
+        <input type="Submit" name="" value="Submit">
+      </div>
+
+    </form>
+
+{% endblock %}
